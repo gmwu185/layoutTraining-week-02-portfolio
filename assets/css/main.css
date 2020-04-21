@@ -1,3 +1,356 @@
-body{
-  background-color: red;
+/*=============================================
+=            color var            =
+=============================================*/
+:root{
+  --warn: #891818;
+  --black: #000000;
+  --gray: #707070;
+  --white: #FFFFFF;
 }
+/*=====  End of color var  ======*/
+
+
+
+/*=============================================
+=                   base                   =
+=============================================*/
+
+/* fontSets
+-------------------------------------------------- */
+/* 系統 Roboto 字體字重
+ * 100 - 等同於 lighter
+ * 400 - 等同於 normal
+ * 500 -
+ * 600 - 等同於 bold 
+*/
+.ff--Roboto{
+  font-family: 
+    Roboto
+
+
+    ;
+}
+/* End of fontSets
+-------------------------------------------------- */
+
+/* reboot
+-------------------------------------------------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body{
+  background-color: var(--white);
+  color: var(--black);
+  font-size: 20px;
+}
+img{
+  vertical-align: middle; 
+  border-style: none;
+  max-width: 100%;
+  height: auto;
+}
+/* End of reboot
+-------------------------------------------------- */
+
+
+/* typography
+-------------------------------------------------- */
+
+/*----------  font-size  ----------*/
+.fontSize--20{
+  font-size: 20px;
+}
+.fontSize--24{
+  font-size: 24px;
+}
+.fontSize--64{
+  font-size: 64px;
+}
+.fontSize--80{
+  font-size: 80px;
+}
+/*----------  /font-size  ----------*/
+
+/*----------  font-weight  ----------*/
+
+.fontWeight--100{
+  font-weight: 100;
+}
+.fontWeight--400{
+  font-weight: 400;
+}
+.fontWeight--500{
+  font-weight: 500;
+}
+.fontWeight--600{
+  font-weight: 600;
+}
+/*----------  /font-weight  ----------*/
+
+/*----------  font-style  ----------*/
+.fontStyle--italic{
+  font-style: italic;
+}
+/*----------  font-style  ----------*/
+
+/* End of typography
+-------------------------------------------------- */
+
+/*============  End of base  =============*/
+
+
+
+
+
+/*=============================================
+=                   layout                   =
+=============================================*/
+
+/* grid
+-------------------------------------------------- */
+.l-container--full{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.l-container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+/* End of grid
+-------------------------------------------------- */
+
+
+/*============  End of layout  =============*/
+
+
+
+
+
+
+/*=============================================
+=            utils            =
+=============================================*/
+
+
+/* Colors
+-------------------------------------------------- */
+
+/*----------  bg-color  ----------*/
+.u-bg--warn{
+  background-color: var(--warn);
+}
+.u-bg--black{
+  background-color: var(--black);
+}
+.u-bg--gray{
+  background-color: var(--gray);
+}
+.u-bg--white{
+  background-color: var(--white);
+}
+/*----------  /bg-color  ----------*/
+
+/*----------  text-color   ----------*/
+.u-text--warn{
+  color: var(--warn);
+}
+.u-text--black{
+  color: var(--black);
+}
+.u-text--gray{
+  color: var(--gray);
+}
+.u-text--white{
+  color: var(--white);
+}
+/*----------  /text-color   ----------*/
+
+/* End of Colors
+-------------------------------------------------- */
+
+
+/* Borders
+-------------------------------------------------- */
+.u-border{
+  border: 1px solid;
+}
+.u-border--grid{
+  border-color: var(--grid);
+}
+/* End of Borders
+-------------------------------------------------- */
+
+
+/* Text
+-------------------------------------------------- */
+
+/*----------  text-align  ----------*/
+.u-textAlign--center{
+  text-align: center;
+}
+.u-textAlign--left{
+  text-align: left;
+}
+.u-textAlign--right{
+  text-align: right;
+}
+/*----------  /text-align  ----------*/
+
+/*----------  vertical-align  ----------*/
+.u-verticalAlign--middle{
+  vertical-align: middle;
+}
+/*----------  /vertical-align  ----------*/
+
+/* End of Text
+-------------------------------------------------- */
+
+
+/* line-height
+-------------------------------------------------- */
+
+.u-lineHeight--36{
+  line-height: 36px;
+}
+.u-lineHeight--42{
+  line-height: 42px;
+}
+.u-lineHeight--75{
+  line-height: 75px;
+}
+.u-lineHeight--94{
+  line-height: 94px;
+}
+
+/* End of line-height
+-------------------------------------------------- */
+
+
+/* DisPlay
+-------------------------------------------------- */
+
+.u-d--inlineBlock{
+  display: inline-block;
+}
+.u-d--inline{
+  display: inline;
+}
+.u-d--flex{
+  display: flex;
+}
+
+/* End of DisPlay
+-------------------------------------------------- */
+
+
+
+/* flex
+-------------------------------------------------- */
+
+/*----------  flex-direction  ----------*/
+.u-flexDirection--row {
+  flex-direction: row;
+}
+.u-flexDirection--column {
+  flex-direction: column;
+}
+.u-flexDirection--rowReverse {
+  flex-direction: row-reverse;
+}
+.u-flexDirection--columnReverse {
+  flex-direction: column-reverse;
+}
+/*----------  flex-direction  ----------*/
+
+/*----------  flexWrap  ----------*/
+.u-flexWrap--nowrap {
+  flex-wrap: nowrap;
+}
+
+.u-flexWrap--wrap {
+  flex-wrap: wrap;
+}
+/*----------  /flexWrap  ----------*/
+
+/*----------  justify-content  ----------*/
+.u-justifyContent--flexStart {
+  justify-content: flex-start;
+}
+.u-justifyContent--center {
+  justify-content: center;
+}
+.u-justifyContent--flexEnd {
+  justify-content: flex-end;
+}
+.u-justifyContent--spaceAround {
+  justify-content: space-around;
+}
+.u-justifyContent--spaceBetween {
+  justify-content: space-between;
+}
+.u-justifyContent--spaceEvenly {
+  justify-content: space-evenly;
+}
+/*----------  /justify-content  ----------*/
+
+/*----------  align-items  ----------*/
+.u-alignItems--flexStart {
+  align-items: flex-start;
+}
+.u-alignItems--flexEnd {
+  align-items: flex-end;
+}
+.u-alignItems--center {
+  align-items: center;
+}
+.u-alignItems--stretch {
+  align-items: stretch;
+}
+/*----------  /align-items  ----------*/
+
+/*----------  align-self  ----------*/
+.u-alignSelf--center{
+  align-self: center;
+}
+/*----------  /align-self  ----------*/
+
+/* End of flex
+-------------------------------------------------- */
+
+
+
+/* spacing
+-------------------------------------------------- */
+
+/*----------  margin  ----------*/
+.u-mb--16{
+  margin-bottom: 16px;
+}
+/*----------  /margin  ----------*/
+
+
+/*----------  padding  ----------*/
+.u-pt--64{
+  padding-top: 64px;
+}
+.u-pb--80{
+  padding-bottom: 80px;
+}
+/*----------  /padding  ----------*/
+
+
+/* End of spacing
+-------------------------------------------------- */
+
+
+
+/*=====  End of utils  ======*/
+
+
+
+
+
+
