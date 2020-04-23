@@ -169,10 +169,15 @@ img{
   max-height: 958px;
 }
 .vision--bg{
-  background-image: url('/assets/img/vision_bg.png');
   background-position: center;
   background-size: auto 100%;
   background-size: cover;
+  background-image: url('././../img/vision_bg.png');
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi){
+  .vision--bg{
+    background-image: url('././../img/vision_bg@2x.png');
+  }
 }
 .vision__inner{
   width: 308px;
@@ -183,6 +188,49 @@ img{
   padding-top: 64px;
   padding-bottom: 56px;
 }
+
+.work{
+  position: relative;
+}
+.work--bg{
+  background-color: var(--width);
+  background-repeat: no-repeat;
+  background-position: 0 361px;
+  background-size:  101% auto;
+  background-image: url('././../img/otherWorks_bg.png');
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi){
+  .work--bg{
+    background-image: url('././../img/otherWorks_bg@2x.png');
+  }
+}
+
+/* 
+  * 1558/1920=0.8114*100=81.14 (無條件進位 82) 
+  * 使用 .work--bg::before 的背景圖方式，因為 z-index: -1，到祖層 body 間都不能設定色彩或是圖片，不然會被蓋，可以想成壓在 body 後方，連 body 使用背景色也都會被蓋過。
+  * 偽類背景圖片可保持等比縮放，等同於使用 img 元素操作縮放。 
+*/
+/* .work--bg::before{
+  content: ' ';
+  padding-top: 82%;
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 361px;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: auto 100%;
+  background-image: url('././../img/otherWorks_bg.png');
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi){
+  .work--bg::before{
+    background-image: url('././../img/otherWorks_bg@2x.png');
+  }
+} */
+
 /*============  End of Block  =============*/
 
 
@@ -196,8 +244,8 @@ img{
 /* grid
 -------------------------------------------------- */
 .l-container--full{
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 .l-container{
   max-width: 1200px;
@@ -336,6 +384,9 @@ img{
 .u-lineHeight--32{
   line-height: 32px;
 }
+.u-lineHeight--33{
+  line-height: 33px;
+}
 .u-lineHeight--36{
   line-height: 36px;
 }
@@ -468,6 +519,9 @@ img{
 .u-mb--16{
   margin-bottom: 16px;
 }
+.u-mb--18{
+  margin-bottom: 18px;
+}
 .u-mb--20{
   margin-bottom: 20px;
 }
@@ -482,6 +536,28 @@ img{
 }
 .u-mb--48{
   margin-bottom: 48px;
+}
+.u-mb--56{
+  margin-bottom: 56px;
+}
+.u-mb--80{
+  margin-bottom: 80px;
+}
+.u-mx--12{
+  margin-left: 12px;
+  margin-right: 12px;
+}
+.u-mx--neg-12{
+  margin-left: -12px;
+  margin-right: -12px;
+}
+.u-mx--14{
+  margin-left: 14px;
+  margin-right: 14px;
+}
+.u-mx--auto{
+  margin-left: auto;
+  margin-right: auto;
 }
 /*----------  /margin  ----------*/
 
@@ -498,11 +574,14 @@ img{
 .u-pt--64{
   padding-top: 64px;
 }
+.u-pt--100{
+  padding-top: 100px;
+}
 .u-pb--80{
   padding-bottom: 80px;
 }
-.u-pt--100{
-  padding-top: 100px;
+.u-pb--106{
+  padding-bottom: 106px;
 }
 /*----------  /padding  ----------*/
 
