@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Here’s JOANNE</title>
   <link rel="stylesheet" href="assets/css/reset.css">
   <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
   <main>
     <!-- Vision -->
-    <section class="l-container--full u-border u-border--grid">
-      <article class="l-container">
-        <h1><span>Here’s </span><span>JOANNE</span></h1>
-        <p>Founder of ‘’XXXD Official’’ & Graphic Designer</p>
-        <ul>
+    <section class="l-container--full u-d--flex u-flexDirection--column u-alignItems--center u-justifyContent--center u-border u-border--gray vision vision--bg">
+      <article class="u-text--white vision__inner u-pt--100">
+        <h1 class="u-mb--32"><span class="font--Roboto-bold-700-italic fontSize--24 u-lineHeight--28 u-d--block">Here’s </span><span class="font--Roboto-black-900-italic fontSize--80 u-lineHeight--94 u-d--block">JOANNE</span></h1>
+        <p class="font--Roboto-bold-700-italic fontSize--24 fontWeight--500 u-lineHeight--42 u-mb--48 u-px--12"><span class='u-d--block'>Founder of ‘’XXXD Official’’ </span><span class='u-d--block'>& Graphic Designer</span></p>
+        <ul class="u-d--flex u-justifyContent--spaceBetween u-px--10">
           <li>
             <a href="https://www.behance.net/" target="_blank" title="link to JOANNE Behance">
               <img src="assets/img/icon--be.svg" alt="Behance icon">
@@ -40,17 +40,23 @@
     </section>
     <!-- /Vision -->
     <!-- About -->
-    <section>
-      <article>
-        <h2>About</h2>
-        <img src="assets/img/about_01.png" alt="" srcset="assets/img/about_01.png 1x, assets/img/about_01@2x.png.png 2x">
-        <ol>
+    <section class="l-container--full u-d--flex u-justifyContent--center">
+      <article class="font--Roboto-bold-700-italic u-textAlign--center about">
+        <h2 class="font--Roboto-medium-500-italic fontSize--64 u-lineHeight--75 u-mb--40">About</h2>
+        <img class="u-mb--16" src="assets/img/about_01.png" alt="" srcset="assets/img/about_01.png 1x, assets/img/about_01@2x.png.png 2x">
+        <p class="u-lineHeight--32">Joanne Chen<br>1997/10/10</p>
+        <p class="u-lineHeight--42 u-mb--16"><span class="u-d--inlineBlock">National Hex School Normal University </span><span  class="u-d--inlineBlock">Department of Visual Design</span></p>
+
+        <!-- <p class="u-lineHeight--28 u-mb--8">Joanne Chen</p>
+        <p class="u-lineHeight--28 u-mb--8">1997/10/10</p>
+        <p class="u-lineHeight--42 u-mb--12"><span class="u-d--inlineBlock">National Hex School Normal University </span><span  class="u-d--inlineBlock">Department of Visual Design</span></p> -->
+        <!-- <ul class="u-lineHeight--32 u-mb--12">
           <li>Joanne Chen</li>
           <li>1997/10/10</li>
-          <li>National Hex School Normal University Department of Visual Design</li>
-        </ol>
-        <hr>
-        <ul>
+          <li><span class="u-d--inlineBlock">National Hex School Normal University </span><span  class="u-d--inlineBlock">Department of Visual Design</span></li>
+        </ul> -->
+        <hr class="u-mt--0 u-mb--32">
+        <ul class="c-centerList u-listLiLate-mb--0 u-lineHeight--28">
           <li>Founder of ‘’XXXD Official’’</li>
           <li>Graphic Designer</li>
           <li>Graphic Intern of Hex School</li>
@@ -59,11 +65,16 @@
     </section>
     <!-- /About -->
     <!-- My Brand -->
-    <section class="l-container--full u-bg--black u-border u-border--grid">
-      <article class="l-container">
-        <h2>My Brand ‘’XXXD’’</h2>
-        <h3>Just Keep XXXD Everyday</h3>
-        <p>2020 年創立的個人服飾品牌<br>引領叛逆少年開啟與社會對話的窗口<br>主打概念潮流T-Shirt</p>
+    <section class="l-container--full u-bg--black u-border u-border--gray">
+      <article class="l-container u-text--white u-textAlign--center">
+        <h2 class="font--Roboto-medium-500-italic fontSize--64 u-lineHeight--75 u-mb--16">My Brand ‘’XXXD’’</h2>
+        <h3 class="font--Roboto-medium-500-italic fontSize--24 u-lineHeight--28 u-mb--32">Just Keep XXXD Everyday</h3>
+        <!-- <p class="fontSize--20"><span class="font--Roboto-medium-500-italic">2020</span> 年創立的個人服飾品牌<br>引領叛逆少年開啟與社會對話的窗口<br>主打概念潮流<span class="font--Roboto-medium-500-italic">T-Shirt</span></p> -->
+        <ul class="fontSize--20 u-lineHeight--28">
+          <li><span class="font--Roboto-medium-500-italic">2020</span> 年創立的個人服飾品牌</li>
+          <li>引領叛逆少年開啟與社會對話的窗口</li>
+          <li>主打概念潮流<span class="font--Roboto-medium-500-italic">T-Shirt</span></li>
+        </ul>
         <ul>
           <li><img src="assets/img/myBrand_01.png" alt="個人服飾品牌特寫圖片一" srcset="assets/img/myBrand_01.png 1x, assets/img/myBrand_01@2x.png 2x"></li>
           <li><img src="assets/img/myBrand_02.png" alt="個人服飾品牌特寫圖片二" srcset="assets/img/myBrand_02.png 1x, assets/img/myBrand_02@2x.png 2x"></li>
@@ -115,7 +126,7 @@
     </section>
     <!-- /Other Works -->
   </main>
-  <footer class="l-container--full ff--Roboto u-bg--black u-text--white u-textAlign--center u-pt--64 u-pb--80">
+  <footer class="l-container--full font--Roboto-medium-500-italic u-bg--black u-text--white u-textAlign--center u-pt--64 u-pb--80">
     <div class="l-container">
       <h2 class="fontSize--64 fontStyle--italic fontWeight--400 u-lineHeight--75 u-mb--16">Contact</h2>
       <ul class="fontWeight--400 fontStyle--italic fontSize--24 u-lineHeight--36">

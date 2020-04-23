@@ -1,4 +1,66 @@
 /*=============================================
+=                   Web Fonts                   =
+=============================================*/
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500;1,700;1,900&display=swap');
+/*============  End of Web Fonts  =============*/
+
+
+/* fontSets
+-------------------------------------------------- */
+/* 系統 Roboto 字體字重
+ * 100 - 等同於 lighter
+ * 400 - 等同於 normal
+ * 500 -
+ * 600 - 等同於 bold 
+*/
+/* Google Web Fonts 字體字重
+  * https://fonts.google.com/specimen/Roboto?sidebar.open&selection.family=Roboto:ital,wght@1,500;1,700;1,900
+  * Light 300
+  * Regular 400
+  * Medium 500
+  * Bold 700
+  * Black 900
+*/
+.font--Roboto-medium-500-italic{
+  font-family: 
+    'Roboto'
+    ,
+    Roboto
+    ,
+    sans-serif
+    ;
+  font-weight: 500;
+  font-style: italic;
+}
+.font--Roboto-bold-700-italic{
+  font-family: 
+    'Roboto'
+    ,
+    Roboto
+    ,
+    sans-serif
+    ;
+  font-weight: 700;
+  font-style: italic;
+}
+.font--Roboto-black-900-italic{
+  font-family: 
+    'Roboto'
+    ,
+    Roboto
+    ,
+    sans-serif
+    ;
+  font-weight: 900;
+  font-style: italic;
+}
+/* End of fontSets
+-------------------------------------------------- */
+
+
+
+/*=============================================
 =            color var            =
 =============================================*/
 :root{
@@ -15,23 +77,8 @@
 =                   base                   =
 =============================================*/
 
-/* fontSets
--------------------------------------------------- */
-/* 系統 Roboto 字體字重
- * 100 - 等同於 lighter
- * 400 - 等同於 normal
- * 500 -
- * 600 - 等同於 bold 
-*/
-.ff--Roboto{
-  font-family: 
-    Roboto
 
 
-    ;
-}
-/* End of fontSets
--------------------------------------------------- */
 
 /* reboot
 -------------------------------------------------- */
@@ -44,7 +91,16 @@
 body{
   background-color: var(--white);
   color: var(--black);
-  font-size: 20px;
+  font-size: 24px;
+  /* line-height: 42px; */
+  /* font-weight: 100; */
+  font-family: 
+    'Roboto'
+    ,
+    Roboto
+    ,
+    sans-serif
+    ;
 }
 img{
   vertical-align: middle; 
@@ -104,6 +160,34 @@ img{
 
 
 
+/*=============================================
+=                   Block                   =
+=============================================*/
+.vision{
+  /* height: 100vh; */
+  min-height: 100vh;
+  max-height: 958px;
+}
+.vision--bg{
+  background-image: url('/assets/img/vision_bg.png');
+  background-position: center;
+  background-size: auto 100%;
+  background-size: cover;
+}
+.vision__inner{
+  width: 308px;
+}
+
+.about{
+  max-width: 412px;
+  padding-top: 64px;
+  padding-bottom: 56px;
+}
+/*============  End of Block  =============*/
+
+
+
+
 
 /*=============================================
 =                   layout                   =
@@ -129,10 +213,41 @@ img{
 
 
 
+/*=============================================
+=                   component                   =
+=============================================*/
+
+.c-centerList{
+}
+.c-centerList li{
+  margin-bottom: 32px;
+  display: inline-block;
+}
+.c-centerList li::before{
+  content: " ";
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  border-radius: 11px;
+  background-color: var(--warn);
+  margin-right: 16px;
+  vertical-align: middle;
+}
+
+/*============  End of component  =============*/
+
+
+
+
+
 
 /*=============================================
 =            utils            =
 =============================================*/
+
+.u-listLiLate-mb--0 li:last-child{
+  margin-bottom: 0;
+}
 
 
 /* Colors
@@ -177,8 +292,8 @@ img{
 .u-border{
   border: 1px solid;
 }
-.u-border--grid{
-  border-color: var(--grid);
+.u-border--gray{
+  border-color: var(--gray);
 }
 /* End of Borders
 -------------------------------------------------- */
@@ -212,8 +327,20 @@ img{
 /* line-height
 -------------------------------------------------- */
 
+.u-lineHeight--24{
+  line-height: 24px;
+}
+.u-lineHeight--28{
+  line-height: 28px;
+}
+.u-lineHeight--32{
+  line-height: 32px;
+}
 .u-lineHeight--36{
   line-height: 36px;
+}
+.u-lineHeight--40{
+  line-height: 40px;
 }
 .u-lineHeight--42{
   line-height: 42px;
@@ -234,6 +361,9 @@ img{
 
 .u-d--inlineBlock{
   display: inline-block;
+}
+.u-d--block{
+  display: block;
 }
 .u-d--inline{
   display: inline;
@@ -326,20 +456,67 @@ img{
 -------------------------------------------------- */
 
 /*----------  margin  ----------*/
+.u-mt--0{
+  margin-top: 0px;
+}
+.u-mb--8{
+  margin-bottom: 8px;
+}
+.u-mb--12{
+  margin-bottom: 12px;
+}
 .u-mb--16{
   margin-bottom: 16px;
+}
+.u-mb--20{
+  margin-bottom: 20px;
+}
+.u-mb--24{
+  margin-bottom: 24px;
+}
+.u-mb--32{
+  margin-bottom: 32px;
+}
+.u-mb--40{
+  margin-bottom: 40px;
+}
+.u-mb--48{
+  margin-bottom: 48px;
 }
 /*----------  /margin  ----------*/
 
 
 /*----------  padding  ----------*/
+.u-px--10{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.u-px--12{
+  padding-left: 12px;
+  padding-right: 12px;
+}
 .u-pt--64{
   padding-top: 64px;
 }
 .u-pb--80{
   padding-bottom: 80px;
 }
+.u-pt--100{
+  padding-top: 100px;
+}
 /*----------  /padding  ----------*/
+
+
+/*----------  Size  ----------*/
+
+.u-minH--100vh{
+  min-height: 100vh;
+}
+.u-minW--100vw{
+  min-width: 100vw;
+}
+
+/*----------  Size  ----------*/
 
 
 /* End of spacing
