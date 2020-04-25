@@ -9,8 +9,8 @@
 # 製作與細節
 - 透過工具類樣式為主組合畫面。
 - [Google web font](https://fonts.google.com/) 的字體依字重與斜體處理成獨立樣式，認識系統預設 `roboto` 與 [Google web font - roboto](https://fonts.google.com/specimen/Roboto) 的字重差異，前者於裝置預設通用較高，後者可做更細的字重規畫。
-- 容器主要透過 flex 排版，沒配合斷點下透過 flex 處理出簡易的自適應排版。
-- 透過 `display:` 的 `block`、`inline-block`; 處理元素內排版，`<span></span>` 控制字串於容器斷行，可延伸用於自適應讓字串在容器於不同寬度時，在行內自動斷行方式。
+- 容器主要透過 flex 排版，透過 flex 處理出簡易的自適應排版 (沒斷點樣式規劃)。
+- 透過 `display:` 的 `block`、`inline-block` 處理元素內排版，`<span></span>` 控制字串於容器斷行，可延伸用於自適應讓字串在容器於不同寬度時，在行內自動斷行方式。
 - 中文正體與英文斜體處理。
 - 偽元素 `display: inline-block` 屬性與字元對齊 (`.c-centerList`)。
 - `.workList` 區塊配合背景圖的三種排版方式，三種方式需針對 `margin` 負值做上移溢位處理，溢位的父層元素需要進行補值計算高度 ( 父層容器高度 `1558 px` )。
