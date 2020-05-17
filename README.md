@@ -6,6 +6,15 @@
 * [Adobe XD 設計稿](https://xd.adobe.com/view/7cc08d73-d444-4b6f-7a94-01ffbdf8ce0a-0af1/)
 
 
+# 前綴與命名
+* `.l` : (layout) 共用全站區塊或架構
+  * 定義格線系統，像是 `.l-container--full` 與 `.l-container`
+* `.p` : (page) 特定頁面使用
+* `.c` : (components) 組件化可用於多頁面使用
+* `.u` : (utils) 工具類樣式，用於調整細部架構或於 HTML 特定元素使用特定斷點等相關樣式 (這裡沒斷點處理)，與主題樣式只有依附關係所分類獨立。
+* 沒有加前綴 : 直接針對區塊做樣式命名，多會以容器與樣式分離處理為主。
+
+
 # 製作與細節
 - 透過工具類樣式為主組合畫面。
 - [Google web font](https://fonts.google.com/) 的字體依字重與斜體處理成獨立樣式，認識系統預設 `roboto` 與 [Google web font - roboto](https://fonts.google.com/specimen/Roboto) 的字重差異，前者於裝置預設通用較高，後者可做更細的字重規畫。
